@@ -100,8 +100,6 @@ def create_slider(df, df_exp, columns_to_filter, keyval):
             min_value, max_value = round(df[column].min(), 3), round(
                 df[column].max(), 3
             )
-            st.write(column, min_value, max_value)
-            st.write(df[column])
             # Create the slider for the column
             sliders[column] = cols[col2write].slider(
                 column + " range",
